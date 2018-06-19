@@ -1,137 +1,226 @@
 .flex{      // 定义弹性盒模型
-  display: flex;
   display: -webkit-flex;
+  display: -moz-flex;
   display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 .row{       // 主轴方向为水平方向，元素正序
-  flex-direction: row;
   -webkit-flex-direction:row;
-  -ms-flex-direction: row;
   -moz-flex-direction: row;
+  -ms-flex-direction: row;
   -o-flex-direction: row
+  flex-direction: row;
 }
 .row-reverse{   // 主轴方向为水平方向，元素倒序
-  flex-direction: row-reverse;
   -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
+  -o-flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 .column{    // 主轴方向为垂直方向，元素正序
-  flex-direction: column;
-  -ms-flex-direction: column;
   -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 .column-reserve{    // 主轴方向为垂直方向，元素为倒序
-  flex-direction: column-reverse;
   -webkit-flex-direction: column-reverse;
+  -moz-flex-direction: column-reverse;
   -ms-flex-direction: column-reverse;
+  -o-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 .content-start{    // 元素在主轴开始位置，富余空间在主轴结束位置
-  justify-content: flex-start;
   -webkit-justify-content: flex-start;
-  -ms-justify-content: flex-start
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  -o-justify-content: flex-start;
+  justify-content: flex-start;
 }
 .content-end{      // 元素在主轴结束位置，富于空间在主轴开始位置
-  justify-content: flex-end;
   -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
 }
 .content-center{   // 元素在主轴中间，富于空间在主轴两侧
-  justify-content: center;
   -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
 }
 .content-between{     // 富于空间平均分配在每两个元素中间
-  justify-content: space-between;
   -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
 }
 .content-around{     //  富于空间平均分布在每个元素两侧
-  justify-content: space-around;
   -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
 }
 .items-start{     // 元素在侧轴开始位置，富于空间在侧轴结束位置
-  align-items: flex-start;
   -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
 }
 .items-end{     // 元素在侧轴结束位置，富于空间在侧轴开始位置
-  align-items: flex-end;
   -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
 }
 .items-center{  // 元素在侧轴中间位置，富裕空间平均分布在元素两端
-  align-items: center;
   -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
 }
 .items-baseline{    // 参考文字基线对齐
-  align-items: baseline;
   -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  -ms-align-items: baseline;
+  -o-align-items: baseline;
+  align-items: baseline;
 }
 .items-stretch{   // 指定侧轴值为auto，则其值会尽可就能的接近所在行的边界
-  align-items: stretch;
   -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
 }
 .self-auto{ // 当为auto是，计算值为元素的父元素的align-items值，如果没有父元素，则计算值为stretch
+  -webkit-align-self: auto;
+  -moz-align-self: auto;
+  -ms-align-self: auto;
+  -o-align-self: auto;
   align-self: auto;
-  -webkit-self: auto;
 }
 .self-start{  // 子元素相对父元素侧轴开始位置 开始
+  -webkit--align-self: flex-start;
+  -moz-align-self: flex-start;
+  -ms-align-self: flex-start;
+  -o-align-self: flex-start;
   align-self: flex-start;
-  -webkit-self: flex-start;
 }
 .self-end{  // 子元素相对父元素侧轴结束位置 开始
+  -webkit-align-self: flex-end;
+  -moz-align-sefl: flex-end;
+  -ms-align-self: flex-end;
+  -o-align-self: flex-end;
   align-self: flex-end;
-  -webkit-self: flex-end;
 }
 .self-center{ // 子元素相对父元素侧轴中间位置 开始
+  -webkit-align-self: center;
+  -moz-align-self: center;
+  -ms-align-items: center;
+  -o-align-self: center;
   align-self: center;
-  -webkit-self: center;
 }
 .self-baseline{ // 子元素的行内与侧轴为同一条，则该值为flex-start；否则参考与基线对齐
+  -webkit-align-self: baseline;
+  -moz-align-self: baseline;
+  -ms-align-self: baseline;
+  -o-align-self: baseline;
   align-self: baseline;
-  -webkit-self: baseline;
 }
 .self-stretch{  // 如果侧轴大小为auto，则其值尽可能的接近合模型的边界
+  -webkit-align-self: stretch;
+  -moz-align-self: stretch;
+  -ms-align-self: stretch;
+  -o-align-self: stretch;
   align-self: stretch;
-  -webkit-self: stretch;
 }
 .nowrap{  // 容器为单行，元素可能溢出
+  -webkit-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
   flex-wrap: nowrap;
-  -webkit-wrap: nowrap;
 }
 .wrap{  // 容器为多行，溢出部分会放到下一行，元素可能会断行
-  flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
+  -mos-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 /*子元素宽度*/
 .grow-a{    // 元素宽度为：元素本身设置的宽度加上按比例分配的宽度
-  flex-grow: 1;
   -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  -o-flex-grow: 1;
+  flex-grow: 1;
 }
 .grow-b{
-  flex-grow: 2;
   -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  -ms-flex-grow: 2;
+  -o-flex-grow: 2;
+  flex-grow: 2;
 }
 .grow-c{
-  flex-grow: 3;
   -webkit-flex-grow: 3;
+  -moz-flex-grow: 3;
+  -ms-flex-grow: 3;
+  -o-flex-grow: 3;
+  flex-grow: 3;
 }
 .flex-a{  // 元素宽度： 元素按照值得比列分配
-  flex: 1;
   -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
 }
 .flex-b{
-  flex: 2;
   -webkit-flex: 2;
+  -moz-flex: 2;
+  -ms-flex: 2;
+  -o-flex: 2;
+  flex: 2;
 }
 .flex-c{
-  flex: 3;
   -webkit-flex: 3;
+  -moz-flex: 3;
+  -ms-flex: 3;
+  -o-flex: 3;
+  flex: 3;
 }
 .order-a{   // 值越小越靠前
+  -webkit-order: -1;
+  -moz-order: -1;
+  -ms-order: -1;
+  -o-order: -1;
   order: -1;
 }
 .order-b{
+  -webkit-order: -2;
+  -moz-order: -2;
+  -ms-order: -2;
+  -o-order: -2;
   order: -2;
 }
 .order-c{
+  -webkit-order: -3;
+  -moz-order: -3;
+  -ms-order: -3;
+  -o-order: -3;
   order: -3;
 }
-.t-center{
-  text-align: center;
-}
+
