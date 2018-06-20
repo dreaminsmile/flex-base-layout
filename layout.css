@@ -9,7 +9,7 @@
   -webkit-flex-direction:row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
-  -o-flex-direction: row
+  -o-flex-direction: row;
   flex-direction: row;
 }
 .row-reverse{   // 主轴方向为水平方向，元素倒序
